@@ -7,11 +7,9 @@ import type { MenuOption } from 'naive-ui'
 
 
 import menu from '../router/menu';
-import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
 const menuOptions: MenuOption[] = menu.reduce((pre, cur) => {
   pre.push({
-    label: t(`message.${cur.name}`),
+    label: cur.name,
     key: cur.name,
   })
   return pre

@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     DialogGlobal: typeof import('./src/components/DialogGlobal.vue')['default']
-    Menu: typeof import('./src/components/MyMenu.vue')['default']
     MessageGlobal: typeof import('./src/components/MessageGlobal.vue')['default']
     MyMenu: typeof import('./src/components/MyMenu.vue')['default']
     NAlert: typeof import('naive-ui')['NAlert']
@@ -20,8 +19,6 @@ declare module 'vue' {
     NLayout: typeof import('naive-ui')['NLayout']
     NLayoutFooter: typeof import('naive-ui')['NLayoutFooter']
     NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
-    NLayoutSider: typeof import('naive-ui')['NLayoutSider']
-    NMenu: typeof import('naive-ui')['NMenu']
     NMessageProvider: typeof import('naive-ui')['NMessageProvider']
     NNotificationProvider: typeof import('naive-ui')['NNotificationProvider']
     NotificationGlobal: typeof import('./src/components/NotificationGlobal.vue')['default']

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cloneDeep } from "lodash";
+import { cloneDeep } from "lodash-es";
 import { onMounted, ref, Ref, watch } from "vue";
 const { ipcRenderer } = require("electron");
 
@@ -114,7 +114,7 @@ onMounted(async () => {
     <n-layout-header style="padding: 10px;" bordered>
       <n-space justify="space-between" align="center">
         <n-space justify="space-between" align="center">
-          <h3>{{ $t("message.hello") }}</h3>
+          <!-- <h3>{{ $t("message.hello") }}</h3> -->
           <h3>
             当前状态：<n-button strong secondary round :type="enable ? 'success' : 'error'">{{ enable ? "运行" : "停止" }}
             </n-button>
